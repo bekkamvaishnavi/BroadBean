@@ -1,0 +1,13 @@
+/* Styles go here */
+
+.score{
+  float:right;
+  margin-right:100px;
+  border-left:1px solid black;
+}
+.scorespace{
+  margin-left:5px;
+}
+.range{
+  border-bottom:1px dotted black;
+}

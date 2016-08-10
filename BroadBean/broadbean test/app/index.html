@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+
+  <head>
+    <meta charset="UTF-8" />
+    <title>Broadbean Angular Assignment</title>
+    <link rel="stylesheet" href="./styles/style.css" />
+    <!-- <script data-require="angular.js@1.3.x" src="https://code.angularjs.org/1.3.16/angular.js" data-semver="1.3.16"></script> -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.js"></script>
+    <script src="./scripts/controllers/script.js"></script>
+  </head>
+
+  <body ng-controller="myCtrl">
+   <div ng-repeat="item in persons  | orderBy:'range':true | groupBy:['range']">
+            <h2 ng-show="item.group_by_CHANGED"><span class="range">{{item.range}}</span></h2>
+                <span>{{item.title}}</span>
+                <a class="score"><span class="scorespace">{{item.score}}</span></a>
+                <p></p>
+        </div>
+  </body>
+
+</html>
